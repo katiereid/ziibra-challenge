@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+      <textarea id="yourTextArea" placeholder="Type one or more email addresses, separated by commas..."></textarea>
+
+      <input type="submit" id="submitButton"/>
+
+      <select id="yourDropdownList" class="hidden">
+      </select>
+
+  </body>
+
+  <style>
+    textarea {
+      width: 50em;
+      height: 50em;  /*I normally never use height because I'll use grids etc. but in this case... */
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+  <script>
+    var textArea = document.getElementById('yourTextArea');
+    var email = textArea.value.split(', ');
+    var submitBtn = document.getElementById('submitButton');
+    var dropDown = document.getElementById('yourDropdownList');
+
+    function validateEmail(email) {
+    var email = textArea.value.split(', ');
+    var regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,5}$/;
+      for (var i = 0; i < email.length; i++) {
+        var currentEmail = email[i];
+        var result = regex.test(currentEmail);
+        if(result === true) {
+          var createOptionEl = document.createElement('option');
+          var optionText = document.createTextNode(currentEmail);
+          var optionEl = document.getElementsByTagName('option');
+          createOptionEl.appendChild(optionText);
+          dropDown.appendChild(createOptionEl);
+          optionEl[0].setAttribute('value', currentEmail);
+        }
+        else {
+          alert('Please check `' + email[i] + '` as it is not in a valid email address format.');
+        }
+      }
+    }
+
+    submitBtn.addEventListener('click', function() {
+        validateEmail(email);
+        dropDown.classList.remove("hidden");
+    });
+  </script>
+</html>
