@@ -1,49 +1,33 @@
 /*header modules*/
 
 .logo {
-  margin-top: .8em;
   overflow: hidden;
   transition: all 1s ease;
 }
 
 /*banner modules*/
 
-.banner {
-  position: relative;
-  padding: .1em;
-}
-
 .banner-text {
   letter-spacing: .2em;
   line-height: 3em;
-  z-index: 100;
-  position: absolute;
   color: rgba(255, 255, 255, .8);
-  left: 30%;
-  top: 25%;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
 }
 
 .banner-text h2 {
   font-size: .8em;
-  margin: 1.4em;
   text-transform: uppercase;
 }
 
 .banner-text h1 {
   font-size: 1.5em;
-  margin: .9em;
   font-family:'Mate', serif;
 }
 
 .banner-text button {
   font-size: .8em;
-  margin: 1em;
   text-transform: uppercase;
-  padding: .5em;
-  padding-left: 2.5em;
-  padding-right: 2.5em;
   background-color: rgba(94, 111, 114, 0.8);
   border-radius: 4em;
 }
@@ -56,8 +40,6 @@
 }
 
 .text-div {
-  padding: 2em;
-  margin: 4em;
   font-size: 1em;
   line-height: 2em;
 }
@@ -75,23 +57,15 @@
 /*table section modules*/
 
 .status-section {
-  font-size: 1em;
   font-family:'Lato', sans-serif;
-  padding: 3em;
 }
 
 .dark-green {
-  height: 1em;
-  display: inline-block;
-  float:left;
   background-color: #556e75;
 }
 
 .light-green {
-  height: 1em;
-  display: inline-block;
   background-color: #a0bfc5;
-  float: right;
 }
 
 .span-30 {
@@ -99,15 +73,15 @@
 }
 
 .span-40 {
-  width:6em;
+  width: 6em;
 }
 
 .span-50 {
-  width:7em;
+  width: 7em;
 }
 
 .span-60 {
-  width:8em;
+  width: 8em;
 }
 
 .span-70 {
@@ -120,33 +94,50 @@
   background-color: #f8f8f8;
   text-transform: uppercase;
   font-family: 'Lato', sans-serif;
-  padding: 5em;
-  text-align: center;
 }
 
 .dest-section h1 {
   font-size: 1em;
   color: #617278;
-  margin: 1em;
   letter-spacing: .2em;
 }
 
 .dest-item {
-  display: inline-block;
-  position: relative;
-  margin: 1em;
   overflow: hidden;
   transition: all 1s ease;
 }
 
 .dest-item p {
-  top: 4em;
-  z-index: 100;
-  position: absolute;
   color: rgba(255, 255, 255, .9);
 }
 
+@media (max-width: 736px) {
 
+  .banner-text {
+    letter-spacing: .1em;
+    line-height: 2.2em;
+  }
+
+  .span-30 {
+    width: 3em;
+  }
+
+  .span-40 {
+    width:4em;
+  }
+
+  .span-50 {
+    width: 5em;
+  }
+
+  .span-60 {
+    width: 6em;
+  }
+
+  .span-70 {
+    width: 7em;
+  }
+}
 
 
 
