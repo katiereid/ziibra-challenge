@@ -5,8 +5,7 @@ nav ul li:hover {
 .dest-item:hover {
   color: white;
   opacity: 0.8;
-  height: 175px;
-  width: 275px;
+  width: 30%;
 }
 
 button:hover {

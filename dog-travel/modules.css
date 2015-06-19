@@ -62,30 +62,36 @@
 
 .dark-green {
   background-color: #556e75;
+  position: absolute;
+  top: 0;
 }
 
 .light-green {
+  width: 100%;
   background-color: #a0bfc5;
+  position: relative;
+  top: -1px;
+  overflow: hidden;
 }
 
 .span-30 {
-  width: 5em;
+  width: 30%;
 }
 
 .span-40 {
-  width: 6em;
+  width: 40%;
 }
 
 .span-50 {
-  width: 7em;
+  width: 50%;
 }
 
 .span-60 {
-  width: 8em;
+  width: 60%;
 }
 
 .span-70 {
-  width: 9em;
+  width: 70%;
 }
 
 /*destinations section */

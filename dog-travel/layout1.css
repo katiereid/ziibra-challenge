@@ -97,12 +97,12 @@ caption {
 th {
   text-align: left;
   padding: .8em;
-  padding-right: 6em;
+  padding-right: 4em;
 }
 
 td {
   padding: .8em;
-  padding-right: 6em;
+  padding-right: 4em;
 }
 
 .dark-green {
@@ -223,11 +223,11 @@ footer {
   }
 
   th {
-    padding-right: 2em;
+    padding-right: 1em;
   }
 
   td {
-    padding-right: 2em;
+    padding-right: 1em;
   }
 
   footer {
